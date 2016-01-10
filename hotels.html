@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sedona's hotels</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body class="inner-page">
+
+  <!-- ШАПКА -->
+    <div class="container clearfix">
+
+      <header class="main-header">
+
+          <nav class="main-nav clearfix">
+
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" width="136" height="70" alt="home"></a>
+            </div>
+
+            <ul>
+              <li><a href="#">ИНФОРМАЦИЯ</a></li>
+              <li><a href="#">ФОТО И ВИДЕО</a></li>
+              <li class="right-align"><a href="#">КАРТА ШТАТА</a></li>
+              <li class="right-align active"><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+            </ul>
+
+          </nav>
+
+      </header>
+  <!-- ФОРМА С ВЫБОРОМ ПАРАМЕТРОВ -->
+      <main>
+
+          <form class="search-form clearfix">
+
+            <fieldset class="infrastructure">
+              <legend>ИНФРАСТРУКТУРА:</legend>
+
+              <input type="checkbox" id="swimming-pool" name="infrastructure_choose" value="БАССЕЙН" checked>
+              <label for="swimming-pool">БАССЕЙН</label>
+
+              <input type="checkbox" id="parking" name="infrastructure_choose" value="ПАРКОВКА">
+              <label for="parking">ПАРКОВКА</label>
+
+
+              <input type="checkbox" id="wi-fi" name="infrastructure_choose" value="WI-FI">
+              <label for="wi-fi">WI-FI</label>
+
+            </fieldset>
+
+            <fieldset class="type-of-living">
+              <legend>ТИП ЖИЛЬЯ:</legend>
+
+              <input type="checkbox" id="hotel" name="type-of-living_choose" value="ГОСТИНИЦА" checked>
+              <label for="hotel">ГОСТИНИЦА</label>
+
+              <input type="checkbox" id="motel" name="type-of-living_choose" value="МОТЕЛЬ" checked>
+              <label for="motel">МОТЕЛЬ</label>
+
+              <input type="checkbox" id="apartments" name="type-of-living_choose" value="WI-FI" checked>
+              <label for="apartments">АПАРТАМЕНТЫ</label>
+
+            </fieldset>
+
+            <fieldset class="price">
+              <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
+
+              <div class="range-filter">
+
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="3 000"></label>
+                </div>
+
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+
+              </div>
+
+                <input type="submit" value="ПОКАЗАТЬ">
+
+            </fieldset>
+
+          </form>
+
+    <!-- КОНЕЦ ФОРМЫ С ВЫБОРОМ ПАРАМЕТРОВ -->
+
+    <!-- ПОЛЕ С РЕЗУЛЬТАТАМИ ПОИСКА -->
+
+          <section class="sorting-row clearfix">
+            <div class="sorting-result">
+              НАЙДЕНО: 3
+            </div>
+            <ul class=sorting-type>
+              <li><span>Сортировка:</span></li>
+              <li class="sorting-active"><span>ПО ЦЕНЕ</span></li>
+              <li><a href="#">ПО ТИПУ</a></li>
+              <li><a href="#">ПО РЕЙТИНГУ</a></li>
+            </ul>
+
+            <div class="asc-desc">
+              <a class="ascending" href="#">&#9650;</a>
+              <a class="descending active" href="#">&#9660;</a>
+            </div>
+          </section>
+
+
+
+          <article class="result clearfix">
+            <section class="result-photo">
+              <img src="img/hotel_1.jpg" width="135" height="90" alt="photo">
+            </section>
+            <section class="result-item">
+              <h2>AMARA RESORT &amp; SPA</h2>
+              <div class="type-and-price">
+                <span>ГОСТИНИЦА</span>
+                <span>ОТ 3500 Р.</span>
+              </div>
+              <div>
+                <a class="btn" href="#">ПОДРОБНЕЕ</a>
+                <a class="btn book" href="#">ЗАБРОНИРОВАТЬ</a>
+              </div>
+            </section>
+            <section class="rating">
+              <p class="rating-star">&#9733; &#9733; &#9733; &#9733;</p>
+              <p>РЕЙТИНГ: 8,5</p>
+            </section>
+          </article>
+
+          <article class="result clearfix">
+            <section class="result-photo">
+              <img src="img/hotel_2.jpg" width="135" height="90" alt="photo">
+            </section>
+            <section class="result-item">
+              <h2>DESERT QUAIL INN</h2>
+              <div class="type-and-price">
+                <span>МОТЕЛЬ</span>
+                <span>ОТ 2000 Р.</span>
+              </div>
+              <div>
+                <a class="btn" href="#">ПОДРОБНЕЕ</a>
+                <a class="btn book" href="#">ЗАБРОНИРОВАТЬ</a>
+              </div>
+            </section>
+            <section class="rating">
+              <p class="rating-star">&#9733; &#9733;</p>
+              <p>РЕЙТИНГ: 8,9</p>
+            </section>
+          </article>
+
+          <article class="result clearfix">
+            <section class="result-photo">
+              <img src="img/hotel_3.jpg" width="135" height="90" alt="photo">
+            </section>
+            <section class="result-item">
+              <h2>VILLAS AT POCO DIABLO</h2>
+              <div class="type-and-price">
+                <span>АПАРТАМЕНТЫ</span>
+                <span>ОТ 4000 Р.</span>
+              </div>
+              <div>
+                <a class="btn" href="#">ПОДРОБНЕЕ</a>
+                <a class="btn book" href="#">ЗАБРОНИРОВАТЬ</a>
+              </div>
+            </section>
+            <section class="rating">
+              <p class="rating-star">&#9733; &#9733; &#9733;</p>
+              <p>РЕЙТИНГ: 9,2</p>
+            </section>
+          </article>
+
+      <!-- КОНЕЦ ФОРМЫ С РЕЗУЛЬТАТАМИ -->
+      </main>
+      <!-- ПОДВАЛ -->
+
+      <footer class="main-footer clearfix">
+
+          <section class="hashtag">
+            <a href="#">#VISITSEDONA</a>
+          </section>
+
+          <section class="footer-social">
+            <p>
+              <a href="#"><i class="icon-twitter"></i></a>
+              <a href="#"><i class="icon-facebook"></i></a>
+              <a href="#"><i class="icon-youtube"></i></a>
+            </p>
+          </section>
+
+          <section class="footer-copyright">
+            <p>WEBSITE BY
+            <a class="footer-logo" href="#"><i class="sprite sprite-ico-academy"></i></a>
+            </p>
+          </section>
+
+      </footer>
+
+    </div>
+
+  </body>
+
+</html>

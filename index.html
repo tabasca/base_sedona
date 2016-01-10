@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to Sedona!</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body>
+
+  <!-- ШАПКА -->
+    <div class="container clearfix">
+
+      <header class="main-header">
+
+          <nav class="main-nav clearfix">
+
+            <div class="logo">
+              <a href="#"><img src="img/logo.png" width="136" height="70" alt="home"></a>
+            </div>
+
+            <ul>
+              <li><a href="#">ИНФОРМАЦИЯ</a></li>
+              <li><a href="#">ФОТО И ВИДЕО</a></li>
+              <li class="right-align"><a href="#">КАРТА ШТАТА</a></li>
+              <li class="right-align"><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+            </ul>
+
+          </nav>
+
+      </header>
+
+
+      <!-- ОСНОВНОЙ КОНТЕНТ -->
+
+      <main>
+
+        <section class="welcome">
+        <!-- 16.09_as секция с именем welcome не очень хорошее название, не несёт за собой функциоального смысла. Но тут пусть остаётся.-->
+          <img src="img/sedona_welcome.png" width="457" height="345" alt="Welcome to the gorgeous Sedona!">
+
+        </section>
+
+        <div class="intro">
+          <h1 class="intro-title">
+            СЕДОНА &#8212; НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+          </h1>
+          <p class="intro-description">
+            РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!
+          </p>
+        </div>
+
+
+
+          <!-- НАЧАЛО БЛОКА С ПРИЧИНАМИ -->
+
+        <div class="reason-row img-1 clearfix">
+
+          <section class="reason blue-bg">
+            <h2 class="reason-title">НАСТОЯЩИЙ<br>ГОРОДОК</h2>
+            <p class="reason-number">&#8210; №1 &#8210;</p>
+            <p class="reason-description">СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          </section>
+
+        </div>
+
+        <div class="reason-row clearfix">
+          <section class="reason-feature">
+            <h3 class="reason-feature-title">ЖИЛЬЕ</h3>
+            <p class="reason-feature-description">
+              РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!
+            </p>
+          </section>
+          <section class="reason-feature">
+            <h3 class="reason-feature-title">ЕДА</h3>
+            <p class="reason-feature-description">
+              ВСЕГДА ЗАКАЗЫВАЙ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!
+            </p>
+          </section>
+          <section class="reason-feature">
+            <h3 class="reason-feature-title">СУВЕНИРЫ</h3>
+            <p class="reason-feature-description">
+              НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!
+            </p>
+          </section>
+        </div>
+
+        <div class="reason-row img-2 clearfix">
+          <section class="reason blue-bg">
+            <h2 class="reason-title">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h2>
+            <p class="reason-number">&#8210; №2 &#8210;</p>
+            <p class="reason-description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+          </section>
+        </div>
+
+        <div class="reason-row clearfix">
+
+          <section class="reason">
+            <h2 class="reason-title">НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h2>
+            <p class="reason-number">&#8210; №3 &#8210;</p>
+            <p class="reason-description">ВСЕ ДОСТОПРИМЕЧА-<br>ТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          </section>
+
+          <section class="reason">
+            <h2 class="reason-title">КРАСИВАЯ<br>ДОРОГА</h2>
+            <p class="reason-number">&#8210; №4 &#8210;</p>
+            <p class="reason-description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+          </section>
+
+          <section class="reason">
+            <h2 class="reason-title">МАЛО<br>ТУРИСТОВ</h2>
+            <p class="reason-number">&#8210; №5 &#8210;</p>
+            <p class="reason-description">БОЛЬШИНСТВО ЕДЕТ В ГРАНД-КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+          </section>
+
+        </div>
+
+        <!-- КОНЕЦ БЛОКА С ПРИЧИНАМИ -->
+
+        <section class="interested">
+          <h2 class="interested-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p class="interested-description">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+        </section>
+
+        <!-- ФОРМА ПОИСКА -->
+
+        <div class="relative-for-form">
+
+          <div class="search">
+
+            <div class="search-btn">
+              <a class="popup-btn" href="/hotel_search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+            </div>
+
+            <form class="search-hotel">
+
+              <button class="search-hotel-close" title="Закрыть"></button>
+
+              <div class="search-hotel_layout">
+
+                <label for="arrival-date" class="for-calendar">ДАТА ЗАЕЗДА:</label>
+                <input type="text" id="arrival-date" name="arrival-date" class="arrival-date" value="24 апреля 2014">
+
+                <label for="departure-date" class="for-calendar">ДАТА ВЫЕЗДА:</label>
+                <input type="text" id="departure-date" name="departure-date" class="departure-date" value="4 июля 2014">
+
+                <label for="adults" class="for-plus for-minus">ВЗРОСЛЫЕ:</label>
+                <input type="text" id="adults" name="adults" class="adults" value="3">
+
+                <label for="kids" class="for-plus for-minus">ДЕТИ:</label>
+                <input type="text" id="kids" name="kids" class="kids" value="0">
+
+                <input class="btn" type="submit" value="НАЙТИ">
+
+              </div>
+
+            </form>
+          </div>
+
+
+        <!-- КАРТА -->
+
+          <div class="modal-content-map">
+            <!-- <a href="#"></a> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26192.588655103325!2d-111.79513845!3d34.8543784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1442488893821" style="border:0" allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+      </main>
+
+      <!-- ПОДВАЛ -->
+
+      <footer class="main-footer clearfix">
+
+          <section class="hashtag">
+            <a href="#">#VISITSEDONA</a>
+          </section>
+
+          <section class="footer-social">
+            <p>
+              <a href="#"><i class="icon-twitter"></i></a>
+              <a href="#"><i class="icon-facebook"></i></a>
+              <a href="#"><i class="icon-youtube"></i></a>
+            </p>
+          </section>
+
+          <section class="footer-copyright">
+            <p>WEBSITE BY
+            <a class="footer-logo" href="#"><i class="sprite sprite-ico-academy"></i></a>
+            </p>
+          </section>
+
+      </footer>
+
+    </div>
+
+    <script src="js/hotel_script.min.js"></script>
+
+  </body>
+</html>
